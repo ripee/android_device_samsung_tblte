@@ -49,6 +49,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 #TWRP specific build flags
+RECOVERY_VARIANT := twrp
 DEVICE_RESOLUTION := 1600x2560
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 255
@@ -68,4 +69,4 @@ TW_NO_EXFAT := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_MTP_DEVICE := "/dev/usb_mtp_gadget"
 TW_TARGET_USES_QCOM_BSP := true
-PRODUCT_COPY_FILES += device/samsung/tblte/twrp.fstab:recovery/root/etc/twrp.fstab
+PRODUCT_COPY_FILES += device/samsung/tblte/recovery/root/etc/twrp.fstab:recovery/root/etc/twrp.fstab
