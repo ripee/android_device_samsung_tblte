@@ -1,12 +1,12 @@
-## TWRP device tree for Samsung Galaxy Note 4 (Snapdragon)
-## trltexx, trltedt, trltetmo, trltecan, trltespr, trlteusc, trltevzw
+## TWRP device tree for Samsung Galaxy Note 4 Edge (International)
+## tbltexx, tbltedt, tbltetmo, tbltecan, tbltespr, tblteusc, tbltevzw
 
-Add to `.repo/local_manifests/trlte.xml`:
+Add to `.repo/local_manifests/tblte.xml`:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<project path="device/samsung/trlte" name="TeamWin/android_device_samsung_trlte" remote="github" revision="android-7.1" />
+	<project path="device/samsung/tblte" name="TeamWin/android_device_samsung_tblte" remote="github" revision="android-7.1" />
 </manifest>
 ```
 
@@ -16,7 +16,7 @@ To build:
 
 ```sh
 . build/envsetup.sh
-lunch omni_trlte-eng
+lunch omni_tblte-eng
 make -j5 recoveryimage
 ```
 
