@@ -1,4 +1,4 @@
-DEVICE_TREE := device/samsung/trlte
+DEVICE_TREE := device/samsung/tblte
 
 CM_PLATFORM_SDK_VERSION := 7	# Required for libf2fs.so
 override TARGET_OUT_VENDOR_SHARED_LIBRARIES = $(TARGET_OUT_SHARED_LIBRARIES)
@@ -29,7 +29,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/apq8084
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
 TARGET_KERNEL_CONFIG := twrp_defconfig
-TARGET_KERNEL_VARIANT_CONFIG := apq8084_sec_trlte_eur_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := apq8084_sec_tblte_eur_defconfig
 KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
 
 # Boot image
@@ -81,6 +81,6 @@ TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 # Init properties from bootloader version, ex. model info
 TARGET_UNIFIED_DEVICE := true
-TARGET_INIT_VENDOR_LIB := libinit_trlte
-TARGET_LIBINIT_DEFINES_FILE := $(DEVICE_TREE)/init/init_trlte.cpp
+TARGET_INIT_VENDOR_LIB := libinit_tblte
+TARGET_LIBINIT_DEFINES_FILE := $(DEVICE_TREE)/init/init_tblte.cpp
 
