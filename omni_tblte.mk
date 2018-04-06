@@ -1,5 +1,5 @@
 # Release name
-PRODUCT_RELEASE_NAME := trlte
+PRODUCT_RELEASE_NAME := tblte
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
@@ -12,7 +12,7 @@ PRODUCT_COPY_FILES += \
     bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := trlte
-PRODUCT_NAME := omni_trlte
+PRODUCT_DEVICE := tblte
+PRODUCT_NAME := omni_tblte
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
